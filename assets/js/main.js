@@ -1,8 +1,8 @@
 let products = [];
-let cart = JSON.parse(localStorage.getItem('amazon_cart')) || [];
+let cart = JSON.parse(localStorage.getItem('bitess_cart')) || [];
 
 document.addEventListener('DOMContentLoaded', async () => {
-    console.log('Amazon Clone Loaded');
+    console.log('Bitess Clone Loaded');
 
     await fetchProducts();
     updateCartCount();
@@ -105,7 +105,7 @@ function renderProductDetail(id) {
             <h1>${product.title}</h1>
             <div class="detail-rating">
                 ${getStars(product.rating)}
-                <span style="color: var(--amazon-link-blue); margin-left: 10px;">${product.reviewCount || 0} ratings</span>
+                <span style="color: var(--bitess-link-blue); margin-left: 10px;">${product.reviewCount || 0} ratings</span>
             </div>
             <div class="detail-price-box">
                 <span style="color: #565959; font-size: 0.9rem;">Price:</span>
@@ -121,8 +121,8 @@ function renderProductDetail(id) {
         <div class="detail-action-box">
             <div class="price">₹${product.price.toLocaleString()}</div>
             <span style="color: #007600; font-weight: 500;">In stock</span>
-            <p style="font-size: 0.9rem; margin-top: 10px;">Ships from Amazon</p>
-            <p style="font-size: 0.9rem;">Sold by Amazon Retail</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Ships from Bitess</p>
+            <p style="font-size: 0.9rem;">Sold by Bitess Retail</p>
             
             <button class="action-btn btn-add" style="margin-top: 20px;" onclick="addToCart(${product.id}, event)">Add to Cart</button>
             <button class="action-btn btn-buy" onclick="buyNow(${product.id})">Buy Now</button>
@@ -136,11 +136,11 @@ function getStars(rating) {
     const r = rating || 0;
     for (let i = 0; i < 5; i++) {
         if (i < Math.floor(r)) {
-            stars += '<i class="fa-solid fa-star" style="color: var(--amazon-orange)"></i>';
+            stars += '<i class="fa-solid fa-star" style="color: var(--bitess-orange)"></i>';
         } else if (i === Math.floor(r) && r % 1 !== 0) {
-            stars += '<i class="fa-solid fa-star-half-stroke" style="color: var(--amazon-orange)"></i>';
+            stars += '<i class="fa-solid fa-star-half-stroke" style="color: var(--bitess-orange)"></i>';
         } else {
-            stars += '<i class="fa-regular fa-star" style="color: var(--amazon-orange)"></i>';
+            stars += '<i class="fa-regular fa-star" style="color: var(--bitess-orange)"></i>';
         }
     }
     return stars;
@@ -151,7 +151,7 @@ window.addToCart = function (productId, event) {
     const product = products.find(p => p.id === productId);
     if (product) {
         cart.push(product);
-        localStorage.setItem('amazon_cart', JSON.stringify(cart));
+        localStorage.setItem('bitess_cart', JSON.stringify(cart));
         updateCartCount();
         alert(`${product.title} added to cart!`);
     }
@@ -218,7 +218,7 @@ function setupCategoryFilters() {
             const categoryName = e.target.textContent.trim();
 
             // Skip non-category links
-            if (['Amazon miniTV', 'Sell', 'Customer Service', 'Prime'].includes(categoryName)) {
+            if (['Bitess miniTV', 'Sell', 'Customer Service', 'Prime'].includes(categoryName)) {
                 return;
             }
 
@@ -265,7 +265,7 @@ function renderCheckout() {
     if (!listContainer) return;
 
     if (cart.length === 0) {
-        listContainer.innerHTML = '<p>Your Amazon Cart is empty.</p>';
+        listContainer.innerHTML = '<p>Your Bitess Cart is empty.</p>';
         itemsPriceEl.textContent = '₹0';
         totalPriceEl.textContent = '₹0';
         return;
@@ -283,7 +283,7 @@ function renderCheckout() {
             <div style="flex: 1;">
                 <h4 style="font-size: 0.95rem; margin-bottom: 5px;">${item.title}</h4>
                 <div style="color: #B12704; font-weight: bold;">₹${item.price.toLocaleString()}</div>
-                <button onclick="removeFromCart(${index})" style="background: none; border: none; color: var(--amazon-link-blue); cursor: pointer; padding: 0; margin-top: 5px; font-size: 0.85rem;">Delete</button>
+                <button onclick="removeFromCart(${index})" style="background: none; border: none; color: var(--bitess-link-blue); cursor: pointer; padding: 0; margin-top: 5px; font-size: 0.85rem;">Delete</button>
             </div>
         `;
         listContainer.appendChild(div);
@@ -296,7 +296,7 @@ function renderCheckout() {
 
 window.removeFromCart = function (index) {
     cart.splice(index, 1);
-    localStorage.setItem('amazon_cart', JSON.stringify(cart));
+    localStorage.setItem('bitess_cart', JSON.stringify(cart));
     updateCartCount();
     renderCheckout();
 }
@@ -316,6 +316,6 @@ window.placeOrder = function () {
     // Simulate API call and success
     alert("Order Placed Successfully! Thank you for shopping with us.");
     cart = [];
-    localStorage.setItem('amazon_cart', JSON.stringify(cart));
+    localStorage.setItem('bitess_cart', JSON.stringify(cart));
     window.location.href = 'index.html';
 }

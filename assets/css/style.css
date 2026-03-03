@@ -1,9 +1,9 @@
 :root {
-    --amazon-dark-blue: #131921;
-    --amazon-light-blue: #232f3e;
-    --amazon-yellow: #febd69;
-    --amazon-orange: #cd9042;
-    --amazon-link-blue: #007185;
+    --bitess-dark-blue: #131921;
+    --bitess-light-blue: #232f3e;
+    --bitess-yellow: #febd69;
+    --bitess-orange: #cd9042;
+    --bitess-link-blue: #007185;
     --white: #ffffff;
     --light-gray: #e3e6e6;
     --text-color: #0F1111;
@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Amazon Ember", Arial, sans-serif;
+    font-family: "Bitess Ember", Arial, sans-serif;
 }
 
 body {
@@ -38,7 +38,7 @@ ul {
 
 .header-top {
     height: 60px;
-    background-color: var(--amazon-dark-blue);
+    background-color: var(--bitess-dark-blue);
     display: flex;
     align-items: center;
     color: var(--white);
@@ -124,7 +124,7 @@ ul {
 }
 
 .search-select:focus, .search-input:focus {
-    outline: 2px solid var(--amazon-orange);
+    outline: 2px solid var(--bitess-orange);
     z-index: 10;
 }
 
@@ -136,18 +136,18 @@ ul {
 }
 
 .search-icon-box {
-    background-color: var(--amazon-yellow);
+    background-color: var(--bitess-yellow);
     width: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--amazon-dark-blue);
+    color: var(--bitess-dark-blue);
     font-size: 1.2rem;
     cursor: pointer;
 }
 
 .search-icon-box:hover {
-    background-color: var(--amazon-orange);
+    background-color: var(--bitess-orange);
 }
 
 /* Header Right Section */
@@ -205,7 +205,7 @@ ul {
     left: 10px;
     font-size: 1rem;
     font-weight: 700;
-    color: var(--amazon-orange);
+    color: var(--bitess-orange);
     background: transparent;
 }
 
@@ -218,7 +218,7 @@ ul {
 
 /* Bottom Header */
 .header-bottom {
-    background-color: var(--amazon-light-blue);
+    background-color: var(--bitess-light-blue);
     height: 39px;
     display: flex;
     align-items: center;
@@ -280,7 +280,7 @@ ul {
 }
 
 .hero-msg a {
-    color: var(--amazon-link-blue);
+    color: var(--bitess-link-blue);
     font-weight: 600;
     margin-left: 5px;
 }
@@ -342,7 +342,7 @@ ul {
 }
 
 .box-content a {
-    color: var(--amazon-link-blue);
+    color: var(--bitess-link-blue);
     font-size: 0.85rem;
     font-weight: 600;
     margin-top: auto;
@@ -408,12 +408,12 @@ ul {
     display: flex;
     align-items: center;
     font-size: 0.8rem;
-    color: var(--amazon-orange);
+    color: var(--bitess-orange);
     margin-bottom: 5px;
 }
 
 .product-count {
-    color: var(--amazon-link-blue);
+    color: var(--bitess-link-blue);
     margin-left: 5px;
 }
 
@@ -431,7 +431,7 @@ ul {
 }
 
 .add-to-cart-btn {
-    background-color: var(--amazon-yellow);
+    background-color: var(--bitess-yellow);
     border: 1px solid #fcd200;
     border-radius: 20px;
     padding: 5px 10px;
@@ -525,7 +525,7 @@ ul {
 }
 
 .btn-add {
-    background-color: var(--amazon-yellow);
+    background-color: var(--bitess-yellow);
     border-color: #FCD200;
 }
 
@@ -534,7 +534,7 @@ ul {
 }
 
 .btn-buy {
-    background-color: var(--amazon-orange);
+    background-color: var(--bitess-orange);
     border-color: #C7511F;
 }
 
@@ -544,7 +544,7 @@ ul {
 
 /* Footer */
 #footer {
-    background-color: var(--amazon-light-blue);
+    background-color: var(--bitess-light-blue);
     color: var(--white);
     margin-top: 20px;
     position: relative;
@@ -565,7 +565,7 @@ ul {
 }
 
 .footer-links {
-    background-color: var(--amazon-light-blue);
+    background-color: var(--bitess-light-blue);
     display: flex;
     justify-content: center;
     padding: 40px 0;
@@ -598,7 +598,7 @@ ul {
 }
 
 .footer-bottom {
-    background-color: var(--amazon-dark-blue);
+    background-color: var(--bitess-dark-blue);
     padding: 20px;
     text-align: center;
     font-size: 0.75rem;
