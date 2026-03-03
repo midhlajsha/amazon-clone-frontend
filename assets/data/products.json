@@ -5,7 +5,7 @@
         "price": 69900,
         "rating": 4.5,
         "reviewCount": 1234,
-        "image": "https://m.media-amazon.com/images/I/61cwywTEOWL._AC_SL1500_.jpg",
+        "image": "https://m.media-bitess.com/images/I/61cwywTEOWL._AC_SL1500_.jpg",
         "prime": true,
         "category": "Mobiles"
     },
@@ -15,7 +15,7 @@
         "price": 14990,
         "rating": 4.0,
         "reviewCount": 567,
-        "image": "https://m.media-amazon.com/images/I/817WWpaQQbL._AC_SL1500_.jpg",
+        "image": "https://m.media-bitess.com/images/I/817WWpaQQbL._AC_SL1500_.jpg",
         "prime": true,
         "category": "Mobiles"
     },
@@ -25,7 +25,7 @@
         "price": 29990,
         "rating": 4.8,
         "reviewCount": 890,
-        "image": "https://m.media-amazon.com/images/I/61+ElFx0vPL._AC_SL1500_.jpg",
+        "image": "https://m.media-bitess.com/images/I/61+ElFx0vPL._AC_SL1500_.jpg",
         "prime": true,
         "category": "Electronics"
     },
@@ -35,7 +35,7 @@
         "price": 3499,
         "rating": 4.6,
         "reviewCount": 3421,
-        "image": "https://m.media-amazon.com/images/I/61MBWA8p50L._AC_SL1000_.jpg",
+        "image": "https://m.media-bitess.com/images/I/61MBWA8p50L._AC_SL1000_.jpg",
         "prime": true,
         "category": "Electronics"
     },
@@ -45,7 +45,7 @@
         "price": 39990,
         "rating": 4.1,
         "reviewCount": 450,
-        "image": "https://m.media-amazon.com/images/I/71yzJoE7WlL._AC_SL1500_.jpg",
+        "image": "https://m.media-bitess.com/images/I/71yzJoE7WlL._AC_SL1500_.jpg",
         "prime": false,
         "category": "Computers"
     }
