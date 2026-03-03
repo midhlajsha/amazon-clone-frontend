@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-top">
+            <div class="header-logo hover-border">
+                <a href="#" class="logo-text">amazon</a>
+                <span class="domain">.in</span>
+            </div>
+
+            <div class="header-location hover-border">
+                <div class="location-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="location-text">
+                    <p class="loc-sub">Delivering to City</p>
+                    <p class="loc-main">Update location</p>
+                </div>
+            </div>
+
+            <div class="header-search">
+                <select class="search-select">
+                    <option>All</option>
+                    <option>Electronics</option>
+                    <option>Mobiles</option>
+                </select>
+                <input type="text" placeholder="Search Amazon.in" class="search-input">
+                <div class="search-icon-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="header-lang hover-border">
+                <div class="lang-flag">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/20px-Flag_of_India.svg.png"
+                        alt="India">
+                </div>
+                <span class="lang-code">EN</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div class="header-signin hover-border">
+                <p class="nav-sub">Hello, sign in</p>
+                <p class="nav-main">Account & Lists <i class="fa-solid fa-caret-down"></i></p>
+            </div>
+
+            <div class="header-orders hover-border">
+                <p class="nav-sub">Returns</p>
+                <p class="nav-main">& Orders</p>
+            </div>
+
+            <div class="header-cart hover-border">
+                <div class="cart-icon-box">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <span class="cart-text">Cart</span>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="bottom-left">
+                <div class="menu-icon hover-border">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>All</span>
+                </div>
+                <a href="#" class="hover-border">Amazon miniTV</a>
+                <a href="#" class="hover-border">Sell</a>
+                <a href="#" class="hover-border">Best Sellers</a>
+                <a href="#" class="hover-border">Mobiles</a>
+                <a href="#" class="hover-border">Today's Deals</a>
+                <a href="#" class="hover-border">Customer Service</a>
+                <a href="#" class="hover-border">Electronics</a>
+                <a href="#" class="hover-border">Prime</a>
+            </div>
+            <div class="bottom-right">
+                <a href="#" class="hover-border">New Launches from Mobiles, Electronics & more | Shop now</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="hero-section">
+            <div class="hero-msg">
+                <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local
+                    delivery. <a href="#">Click here to go to amazon.in</a></p>
+            </div>
+        </div>
+
+        <div class="shop-section">
+            <div class="shop-row" id="product-grid">
+                <!-- Products will be rendered here via JS -->
+                <!-- Fallback/Static boxes for layout visualization before JS loads -->
+                <div class="box">
+                    <div class="box-content">
+                        <h2>Clothes</h2>
+                        <div class="box-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60');">
+                        </div>
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2>Health & Personal Care</h2>
+                        <div class="box-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1571781565036-d3f75af02f9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60');">
+                        </div>
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2>Furniture</h2>
+                        <div class="box-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60');">
+                        </div>
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2>Electronics</h2>
+                        <div class="box-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1498049860654-af1a5c5668ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60');">
+                        </div>
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-slider-container">
+                <h2>Best Sellers in Computers & Accessories</h2>
+                <div class="product-slider" id="best-sellers">
+                    <!-- Dynamic slider content -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+            Back to top
+        </div>
+        <div class="footer-links">
+            <div class="footer-col">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Amazon Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell on Amazon</a></li>
+                    <li><a href="#">Sell under Amazon Accelerator</a></li>
+                    <li><a href="#">Protect and Build Your Brand</a></li>
+                    <li><a href="#">Amazon Global Selling</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">COVID-19 and Amazon</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Returns Centre</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo"></div>
+            <p>&copy; 1996-2024, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
+
+    <!-- Removed static products.js, data is now fetched from api/products.php in main.js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

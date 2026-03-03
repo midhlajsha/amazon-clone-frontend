@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-top">
+            <div class="header-logo hover-border">
+                <a href="#" class="logo-text">amazon</a>
+                <span class="domain">.in</span>
+            </div>
+
+            <div class="header-location hover-border">
+                <div class="location-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="location-text">
+                    <p class="loc-sub">Delivering to City</p>
+                    <p class="loc-main">Update location</p>
+                </div>
+            </div>
+
+            <div class="header-search">
+                <select class="search-select">
+                    <option>All</option>
+                    <option>Electronics</option>
+                    <option>Mobiles</option>
+                </select>
+                <input type="text" placeholder="Search Amazon.in" class="search-input">
+                <div class="search-icon-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="header-lang hover-border">
+                <div class="lang-flag">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/20px-Flag_of_India.svg.png"
+                        alt="India">
+                </div>
+                <span class="lang-code">EN</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div class="header-signin hover-border">
+                <p class="nav-sub">Hello, sign in</p>
+                <p class="nav-main">Account & Lists <i class="fa-solid fa-caret-down"></i></p>
+            </div>
+
+            <div class="header-orders hover-border">
+                <p class="nav-sub">Returns</p>
+                <p class="nav-main">& Orders</p>
+            </div>
+
+            <div class="header-cart hover-border">
+                <div class="cart-icon-box">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <span class="cart-text">Cart</span>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="bottom-left">
+                <div class="menu-icon hover-border">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>All</span>
+                </div>
+                <a href="#" class="hover-border">Amazon miniTV</a>
+                <a href="#" class="hover-border">Sell</a>
+                <a href="#" class="hover-border">Best Sellers</a>
+                <a href="#" class="hover-border">Mobiles</a>
+                <a href="#" class="hover-border">Today's Deals</a>
+                <a href="#" class="hover-border">Customer Service</a>
+                <a href="#" class="hover-border">Electronics</a>
+                <a href="#" class="hover-border">Prime</a>
+            </div>
+            <div class="bottom-right">
+                <a href="#" class="hover-border">New Launches from Mobiles, Electronics & more | Shop now</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" style="background-color: #f7f7f7; padding: 20px;">
+        <div class="checkout-container"
+            style="max-width: 1000px; margin: 0 auto; display: flex; gap: 20px; min-height: 500px;">
+            <div class="checkout-left" style="flex: 2;">
+                <!-- Shipping Address Form -->
+                <div class="checkout-box"
+                    style="background: white; padding: 20px; border-radius: 4px; border: 1px solid #ddd; margin-bottom: 20px;">
+                    <h2 style="font-size: 1.2rem; margin-bottom: 15px;">1. Shipping Address</h2>
+                    <form id="shipping-form" style="display: flex; flex-direction: column; gap: 10px;">
+                        <input type="text" id="fname" placeholder="Full name (First and Last name)" required
+                            style="padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                        <input type="text" id="address" placeholder="Flat, House no., Building, Company, Apartment"
+                            required style="padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                        <input type="text" id="city" placeholder="Town/City" required
+                            style="padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                        <input type="text" id="pin" placeholder="PIN Code" required
+                            style="padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                    </form>
+                </div>
+
+                <!-- Payment Method Form -->
+                <div class="checkout-box"
+                    style="background: white; padding: 20px; border-radius: 4px; border: 1px solid #ddd; margin-bottom: 20px;">
+                    <h2 style="font-size: 1.2rem; margin-bottom: 15px;">2. Payment Method</h2>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <label><input type="radio" name="payment" value="card" checked> Credit/Debit Card</label>
+                        <label><input type="radio" name="payment" value="upi"> UPI Apps</label>
+                        <label><input type="radio" name="payment" value="cod"> Cash on Delivery</label>
+                    </div>
+                </div>
+
+                <!-- Order Items -->
+                <div class="checkout-box"
+                    style="background: white; padding: 20px; border-radius: 4px; border: 1px solid #ddd;">
+                    <h2 style="font-size: 1.2rem; margin-bottom: 15px;">3. Review items and delivery</h2>
+                    <div id="checkout-items-list">
+                        <!-- Items injected by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkout-right" style="flex: 1;">
+                <div class="order-summary-box"
+                    style="background: white; padding: 20px; border-radius: 4px; border: 1px solid #ddd; position: sticky; top: 20px;">
+                    <button id="place-order-btn" class="action-btn btn-add" style="margin-bottom: 20px;"
+                        onclick="placeOrder()">Place Your Order</button>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Order Summary</h3>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Items:</span>
+                        <span id="summary-items-price">₹0</span>
+                    </div>
+                    <div
+                        style="display: flex; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                        <span>Delivery:</span>
+                        <span>₹40</span>
+                    </div>
+                    <div
+                        style="display: flex; justify-content: space-between; font-weight: bold; font-size: 1.2rem; color: #B12704;">
+                        <span>Order Total:</span>
+                        <span id="summary-total-price">₹0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+            Back to top
+        </div>
+        <div class="footer-links">
+            <div class="footer-col">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Amazon Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell on Amazon</a></li>
+                    <li><a href="#">Sell under Amazon Accelerator</a></li>
+                    <li><a href="#">Protect and Build Your Brand</a></li>
+                    <li><a href="#">Amazon Global Selling</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">COVID-19 and Amazon</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Returns Centre</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo"></div>
+            <p>&copy; 1996-2024, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
+
+    <!-- Removed static products.js, data is now fetched from api/products.php in main.js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
